@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>form validator</title>
+	<head>
+	<body>
+		<?php
+			$defaults=$_POST;
+			if(strlen(trim($defaults['name']))<5){
+				print "Name should be more than 5 characters";
+			}
+			if(strlen(trim($defaults['address']))<5){
+				print "Address should be more than 5 characters";
+			}
+			if(strlen($defaults['phone'])==8){
+				if(){
+					print "Incorrect phone number format.";
+				}
+			}else{
+				print "phone number should only be of 10 digits.";
+			}
+		?>
+	</body>
+</html>
